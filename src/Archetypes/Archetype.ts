@@ -5,10 +5,10 @@ abstract class Archetype {
   private _special: number;
   private _cost: number;
 
-  constructor(name: string) {
+  constructor(name: string, special: number, cost: number) {
     this._name = name;
-    this._special = 0;
-    this._cost = 0;
+    this._special = special;
+    this._cost = cost;
   }
 
   get name() {
